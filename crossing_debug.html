@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nieprzejezdne przejazdy</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<link rel="stylesheet" type="text/css" href="./main.css" /><style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+        #map {
+            height: 100%;
+            width: 70%;
+            float: left;
+        }
+  #pane {
+      height: 100%;
+      width: 30%;
+      float: right;
+  }    </style>
+      </head>
+      <body>
+      	<div id="map"></div><div id="pane"><div id="progressBar" class="round-colored"><div style="width: 96%;">96% </div></div>czarny - brak danych na przejeździe czy przejezdny dla rowerów (jest highway=crossing bez bicycle=yes lub bicycle=no na trasie rowerowej)<br><br>czerwony - prawdopodobnie brak highway=crossing<br><br>niebieski - nieoczekiwane bicycle=no bez highway=crossing</div>
+
+      	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+      	<script>
+      		var map = L.map('map').setView([50.06, 19.995], 12);
+      		mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+      		L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+      
+L.circleMarker([50.0644941, 19.9424687], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0908338, 20.0091495], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0724877, 19.9811822], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0870399, 19.9326546], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0782072, 20.0296034], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0568987, 19.9072158], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0599067, 19.9207635], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0653725, 19.9970497], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0498182, 20.0498371], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0166331, 20.0076413], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0691594, 20.0128388], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0693091, 20.0132942], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.065344, 19.9969047], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0638613, 19.988596], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0357634, 19.9422375], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0885208, 20.0210476], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0725727, 19.9813197], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0853249, 20.038016], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0853601, 20.0382743], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0852095, 20.0384479], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0257099, 19.9782397], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0683485, 20.0525544], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0024031, 19.9132836], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0521696, 19.9542043], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0523211, 19.9541112], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0568642, 19.9341039], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0915038, 19.9487859], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0837636, 19.9285695], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0837738, 19.92921], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0214973, 19.9326803], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0898354, 19.9798454], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0724362, 19.9810926], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0401484, 19.9825465], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0684215, 19.9233401], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+
+</script>
+</body>
+</html>

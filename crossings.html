@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nieprzejezdne przejazdy</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<link rel="stylesheet" type="text/css" href="./main.css" /><style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+        #map {
+            height: 100%;
+            width: 70%;
+            float: left;
+        }
+  #pane {
+      height: 100%;
+      width: 30%;
+      float: right;
+  }    </style>
+      </head>
+      <body>
+      	<div id="map"></div><div id="pane"><div class="box">
+<h2>Nieprzejezdne przejazdy</h2>
+<div id="progressBar" class="round-colored"><div style="width: 79%;">79% </div></div><div id="progressBarDescription">
+<p>Taka część skrzyżowań wydzielonych tras rowerowych i dróg jest już przejezdna</p>
+</div>
+<p>Rowerem nie można legalnie przejechać po przejściu dla pieszych. Niestety, w wielu miejscach trasy rowerowe są przerwana przejściami. Oznacza to obowiązkiem zejścia z roweru na każdym takim wadliwym skrzyżowaniu.</p>
+
+<p>Od września 2015 (patrz http://miastadlarowerow.pl/index_wiadomosci.php?dzial=2&kat=9&art=135) łatwiej jest wyznaczać przejazdy rowerowe. Nowelizacja rozporządzenia ułatwia wyznaczanie przejazdu łączonego z przejściem, również tam gdzie nie ma olbrzymich ilości miejsca.</p>
+
+<p>Warto pamiętać że są miejsca gdzie brak przejazdu jest tylko objawem prawdziwego problemu którego nie rozwiąże wyznaczenie przejścia. Czasem to cała wydzielona trasa rowerowa jest pomyłką (np. na Daszyńskiego) a problem należy rozwiązać przez likwidację takiej antyinfrastruktury rowerowej ponieważ jazda drogą jest bezpieczniejsza i wygodniejsza. Czasem przejścia są tylko jednym z wielu problemów i domalowanie przejazdów dużo nie pomoże (np. wzdłuż Zakopianki). W niektórych miejscach przejścia wyznaczone są w strefie zamieszkania gdzie są zbędne (np w rejonie Plant) - w takich miejscach problemem jest nie brak przejazdu a zbędnie wyznaczone przejście dla pieszych</p>
+</div></div>
+
+      	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+      	<script>
+      		var map = L.map('map').setView([50.06, 19.995], 12);
+      		mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+      		L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+    }).addTo(map);
+      
+L.circleMarker([50.0885392, 19.9735176], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0896485, 19.9085663], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.068891, 19.9234648], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0770714, 19.8891475], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0914617, 19.9398471], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.052865, 19.9163327], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.05902, 19.9404154], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0657774, 19.9390079], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0578577, 19.9350545], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0655295, 19.9388433], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0577912, 19.9341916], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0612493, 19.9437666], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.014948, 19.9451462], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0126711, 19.956203], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0126107, 19.9566787], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0137723, 19.9649623], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0140358, 19.9657875], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.016927, 19.977085], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0592391, 19.9754667], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0740622, 19.8948363], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0743145, 19.9232672], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0075386, 20.0151342], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0140826, 19.950036], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0129391, 19.9278541], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0747626, 19.9466617], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0911497, 19.9307225], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0838993, 20.0268709], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.019307, 19.9453894], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.019969, 19.987235], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0169746, 19.9912612], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0114778, 19.9270468], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0534643, 20.0500571], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0881423, 19.9207203], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0300515, 19.9472639], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.016727, 20.016148], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0072013, 19.9252771], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0150552, 20.0245714], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0659925, 20.0017374], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0654658, 20.001663], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0648681, 19.997631], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0648168, 19.9970069], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0649271, 20.0015825], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0647014, 19.999533], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0656048, 19.9991701], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0642491, 19.9975072], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0651265, 19.99937], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0648983, 19.9969367], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0646119, 19.9971772], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0647952, 19.9976531], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0647497, 19.9970235], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0720732, 20.0291428], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.063429, 19.9857044], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0636612, 19.9873079], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0635085, 19.9860673], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0902297, 20.0216249], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0074695, 20.0152876], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0129731, 19.9604848], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0137787, 19.9287053], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0186753, 19.977696], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0210917, 19.9777649], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0212316, 19.9777357], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0213546, 19.9772132], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0213702, 19.9775306], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0171614, 19.9774758], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0151008, 19.971139], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0152565, 19.9712653], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0151689, 19.9708612], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0140016, 19.9653155], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0139166, 19.9651277], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0138639, 19.9659296], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0137938, 19.9660361], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0131034, 19.9617226], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0137527, 19.9659053], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0129981, 19.961136], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0131833, 19.9614455], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0140368, 19.9497154], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0139232, 19.9502167], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0128329, 19.9597746], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0857818, 19.9798699], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0859369, 19.979827], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0914363, 19.9293863], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0919778, 19.9355522], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0894575, 19.9198576], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0146741, 19.9451099], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0908461, 20.0210798], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.043381, 19.9674771], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0118116, 19.9439401], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0185242, 19.9307115], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0876904, 19.8887578], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0893787, 19.9031286], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.009826, 19.944164], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0098497, 19.9443347], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0100063, 19.9444562], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0146537, 19.9456496], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0146708, 19.9454739], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0146862, 19.9452763], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.014758, 19.9456271], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0148302, 19.9451275], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.014865, 19.9456233], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0892278, 19.913166], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0450231, 19.9836336], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0451674, 19.9838724], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0452234, 19.9833864], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0453686, 19.9836177], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0487561, 19.9818707], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0487792, 19.9814986], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0488221, 19.9820112], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.087503, 19.8938996], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0592636, 19.9756485], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0600385, 19.9707835], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0610536, 19.9804073], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0398528, 19.9372115], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0893897, 19.9032771], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0895922, 19.9132427], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0896144, 19.9134257], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0897002, 19.9090719], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0904837, 19.9187029], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.081667, 19.9156066], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0837131, 19.9249052], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0841169, 19.9270451], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0841697, 19.9306845], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0646148, 19.9972496], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0405604, 19.9366733], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0302461, 19.9289406], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0847862, 19.9346536], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0848125, 19.9347195], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.054171, 19.9535546], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.006893, 19.9247711], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0069766, 19.9251899], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0070929, 19.9252295], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0071024, 19.9247046], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0071713, 19.9247366], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0073662, 19.9248275], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0595264, 19.932996], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0113707, 19.9274859], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0898478, 19.8841645], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.044715, 19.9342436], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0467858, 19.9777422], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0588671, 19.9631466], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0599235, 19.9673516], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0801943, 19.8901389], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0801708, 19.8902993], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0223784, 19.9331741], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0317924, 19.9207066], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0313455, 19.9170652], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0908656, 19.9739193], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0848752, 19.9628045], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0849233, 19.9619343], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0850302, 19.9626014], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.091172, 19.881327], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0837413, 19.9271089], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0845514, 19.9349711], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0901215, 19.8930591], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.1006181, 19.8666381], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0902427, 19.9436043], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0852706, 19.9366434], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0881316, 19.9478421], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0928531, 19.9751442], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0946918, 19.9752569], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0949458, 19.9750228], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0961419, 19.9741179], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0978494, 19.9730307], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0886467, 19.9571804], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0131574, 19.9613164], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0969495, 19.9735837], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.044424, 19.9343288], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0184467, 19.9306757], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0316954, 19.9203273], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0314996, 19.9207662], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0589432, 19.9337433], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0590352, 19.9336811], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0592372, 19.934563], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0593441, 19.9345356], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0127905, 19.9277697], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0138353, 19.9282861], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0133859, 19.9280804], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0405281, 19.9367018], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0421409, 19.9835564], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0020357, 19.9220242], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0021306, 19.9222407], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0026565, 19.9227562], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+L.circleMarker([50.0141161, 19.9499098], {	color: 'red',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup("nielegalny przejazd.");
+
+</script>
+</body>
+</html>
