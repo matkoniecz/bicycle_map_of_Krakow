@@ -5,7 +5,7 @@
 	<title>Gdzie można jechać rowerem tylko w jedną stronę</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" />
 <link rel="stylesheet" type="text/css" href="./main.css" /><style>
         body {
             padding: 0;
@@ -27,14 +27,14 @@
   }    </style>
       </head>
       <body>
-      	<div id="map"></div><div id="pane">74 km - Gdzie można jechać rowerem tylko w jedną stronę<br><br>W ostatnich latach w Krakowie ilość miejsc gdzie brakuje dopuszczenia dwukierunkowego ruchu rowerowego maleje. Jednak nadal pozostały do nadrobienia wieloletnie zaległości.<br><br>W niektórych miejscach (np. wschodni fragment Alei 3 Maja) potrzebne jest nie dopuszczenie ruchu w obu kierunkach a dobudowanie brakującego fragmentu drogi rowerowej i przejazdów.<br><br>Warto zauważyć iż mapa ta nie pokazuje jak istotne jest dopuszczenie kontraruchu w danym miejscu - np. udrożnienie Lea stworzyłoby ważną trasę do centrum. A na wprowadzenie kontraruchu na ulicy stanowiącą dojazd do terminala lotniska potrzeba prawdopodobnie jeszcze więcej negocjacji i dyskusji, podczas gdy z tej zmiany skorzystaliby nieliczni.<br><br>Mapa ta nie pokazuje też jak trudne jest zalegalizowanie ruchu rowerowego w obu kierunkach w danym miejscu. Często wiążę się to z drobną urzędową polityką i warto z daną ulicą odpuścić by załatwić kilka innych. Szczególnie trudne jest wprowadzanie zmian jeśli wiążę się to jakąkolwiek, nawet najmniejszą redukcją ilości miejsc do parkowania samochodów.<br></div>
+      	<div id="map"></div><div id="pane">73 km - Gdzie można jechać rowerem tylko w jedną stronę<br><br>W ostatnich latach w Krakowie ilość miejsc gdzie brakuje dopuszczenia dwukierunkowego ruchu rowerowego maleje. Jednak nadal pozostały do nadrobienia wieloletnie zaległości.<br><br>W niektórych miejscach (np. wschodni fragment Alei 3 Maja) potrzebne jest nie dopuszczenie ruchu w obu kierunkach a dobudowanie brakującego fragmentu drogi rowerowej i przejazdów.<br><br>Warto zauważyć iż mapa ta nie pokazuje jak istotne jest dopuszczenie kontraruchu w danym miejscu - np. udrożnienie Lea stworzyłoby ważną trasę do centrum. A na wprowadzenie kontraruchu na ulicy stanowiącą dojazd do terminala lotniska potrzeba prawdopodobnie jeszcze więcej negocjacji i dyskusji, podczas gdy z tej zmiany skorzystaliby nieliczni.<br><br>Mapa ta nie pokazuje też jak trudne jest zalegalizowanie ruchu rowerowego w obu kierunkach w danym miejscu. Często wiążę się to z drobną urzędową polityką i warto z daną ulicą odpuścić by załatwić kilka innych. Szczególnie trudne jest wprowadzanie zmian jeśli wiążę się to jakąkolwiek, nawet najmniejszą redukcją ilości miejsc do parkowania samochodów.<br></div>
 
-      	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+      	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.js"></script>
       	<script>
       		var map = L.map('map').setView([50.06, 19.995], 12);
       		mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
       		L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+        attribution: 'data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, basemap: &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
         subdomains: 'abcd',
         maxZoom: 19
     }).addTo(map);
@@ -390,27 +390,6 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0184188, 19.925272], [50.0177691, 19.9244271]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0491784, 19.9236612], [50.04929, 19.9233371]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.04929, 19.9233371], [50.049422, 19.9226393]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.049422, 19.9226393], [50.0494579, 19.9224498]],
     {
               color: 'red',
               weight: 1,
@@ -6745,83 +6724,6 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0862826, 19.9695631], [50.0861834, 19.9696627]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0861834, 19.9696627], [50.086159, 19.9696968]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.086159, 19.9696968], [50.0860035, 19.9699139]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0860035, 19.9699139], [50.0859653, 19.9700145]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0859653, 19.9700145], [50.0859395, 19.9701538]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0859395, 19.9701538], [50.0859339, 19.9702317]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0859339, 19.9702317], [50.0858941, 19.9711028]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0858941, 19.9711028], [50.085883, 19.971305]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.085883, 19.971305], [50.0858597, 19.9713822]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0858597, 19.9713822], [50.0858243, 19.971435]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0858243, 19.971435], [50.0857824, 19.9714639]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
           ).addTo(map);L.polyline([[50.0064377, 20.0098409], [50.0064296, 20.0099478]],
     {
               color: 'red',
@@ -9007,34 +8909,6 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.008394, 19.8730515], [50.0084111, 19.8719741]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0102367, 20.0086943], [50.0103574, 20.0088054]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0103574, 20.0088054], [50.0105754, 20.0090017]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0105754, 20.0090017], [50.0106362, 20.0090543]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0106362, 20.0090543], [50.0107824, 20.00917]],
     {
               color: 'red',
               weight: 1,
@@ -11708,48 +11582,6 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0519812, 19.9274555], [50.0518754, 19.9274233]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0518754, 19.9274233], [50.0517793, 19.9273956]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0517793, 19.9273956], [50.0516941, 19.9273403]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0516941, 19.9273403], [50.0514299, 19.9269566]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0514299, 19.9269566], [50.0513286, 19.9267841]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0513286, 19.9267841], [50.0512925, 19.926655]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
           ).addTo(map);L.polyline([[50.0502835, 19.9288258], [50.0514299, 19.9269566]],
     {
               color: 'red',
@@ -12031,20 +11863,6 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0296426, 19.9540467], [50.0296652, 19.9539164]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0291529, 19.9565707], [50.0292547, 19.9562028]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0292547, 19.9562028], [50.0293581, 19.9556395]],
     {
               color: 'red',
               weight: 1,
@@ -12766,20 +12584,6 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0729355, 19.9333754], [50.0731205, 19.9332121]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.1062804, 19.8501754], [50.1061571, 19.8501904]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.1061571, 19.8501904], [50.1062631, 19.8503013]],
     {
               color: 'red',
               weight: 1,
@@ -13864,84 +13668,42 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0722093, 19.8050891], [50.072287, 19.8052498]],
+          ).addTo(map);L.polyline([[50.0722093, 19.8050891], [50.0723354, 19.805207]],
     {
               color: 'red',
               weight: 1,
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.072287, 19.8052498], [50.0723425, 19.8053633]],
+          ).addTo(map);L.polyline([[50.0724056, 19.8054188], [50.0724279, 19.8054911]],
     {
               color: 'red',
               weight: 1,
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0723425, 19.8053633], [50.0723798, 19.8054352]],
+          ).addTo(map);L.polyline([[50.0724279, 19.8054911], [50.0724442, 19.8055438]],
     {
               color: 'red',
               weight: 1,
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0723798, 19.8054352], [50.0724029, 19.8054961]],
+          ).addTo(map);L.polyline([[50.0724442, 19.8055438], [50.0724525, 19.8056208]],
     {
               color: 'red',
               weight: 1,
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0724029, 19.8054961], [50.0724224, 19.8055652]],
+          ).addTo(map);L.polyline([[50.0724525, 19.8056208], [50.072448, 19.8057313]],
     {
               color: 'red',
               weight: 1,
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0724224, 19.8055652], [50.0724259, 19.8056233]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0724259, 19.8056233], [50.072423, 19.8057288]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.072423, 19.8057288], [50.0724195, 19.8058115]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0185499, 20.0344885], [50.0184979, 20.0345062]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0184979, 20.0345062], [50.0184568, 20.0345008]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0184568, 20.0345008], [50.0184217, 20.0344684]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0184217, 20.0344684], [50.0183392, 20.0344]],
+          ).addTo(map);L.polyline([[50.072448, 19.8057313], [50.0724195, 19.8058115]],
     {
               color: 'red',
               weight: 1,
@@ -14362,69 +14124,6 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0590138, 19.93971], [50.0590535, 19.9397261]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.048944, 19.9241645], [50.0491784, 19.9236612]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0488875, 19.9259476], [50.0489012, 19.9258089]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0489012, 19.9258089], [50.048872, 19.925388]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.048872, 19.925388], [50.0488637, 19.9251818]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0488705, 19.9247151], [50.0488883, 19.9244835]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0488883, 19.9244835], [50.048944, 19.9241645]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0488637, 19.9251818], [50.0488627, 19.9250002]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0488627, 19.9250002], [50.0488621, 19.9248948]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0488621, 19.9248948], [50.0488705, 19.9247151]],
     {
               color: 'red',
               weight: 1,
@@ -14971,27 +14670,6 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0527227, 19.9480747], [50.0518529, 19.9484298]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0107824, 20.00917], [50.0106608, 20.0090121]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0106608, 20.0090121], [50.0104025, 20.0086966]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0104025, 20.0086966], [50.0102971, 20.00857]],
     {
               color: 'red',
               weight: 1,
@@ -16643,7 +16321,28 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0711582, 19.7998968], [50.0707771, 19.8000288]],
+          ).addTo(map);L.polyline([[50.0711582, 19.7998968], [50.0709809, 19.7999007]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0709809, 19.7999007], [50.0709131, 19.799907]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0709131, 19.799907], [50.0706924, 19.7999586]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0706924, 19.7999586], [50.0706738, 19.800003]],
     {
               color: 'red',
               weight: 1,
@@ -16658,20 +16357,6 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0758355, 19.9013214], [50.0757997, 19.9016616]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0102971, 20.00857], [50.0101504, 20.0084958]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0101504, 20.0084958], [50.0102367, 20.0086943]],
     {
               color: 'red',
               weight: 1,
@@ -16931,6 +16616,55 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0654823, 19.9841005], [50.0655666, 19.9841733]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0723354, 19.805207], [50.0723861, 19.8053558]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0723861, 19.8053558], [50.0724056, 19.8054188]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0724056, 19.8054188], [50.0723988, 19.8055548]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0723988, 19.8055548], [50.0723863, 19.8056217]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0723863, 19.8056217], [50.0723407, 19.8057258]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0723407, 19.8057258], [50.0722729, 19.8057686]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0722729, 19.8057686], [50.0721726, 19.8057875]],
     {
               color: 'red',
               weight: 1,

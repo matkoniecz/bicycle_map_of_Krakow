@@ -5,7 +5,7 @@
 	<title>Nieprzejezdne przejazdy</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" />
 <link rel="stylesheet" type="text/css" href="./main.css" /><style>
         body {
             padding: 0;
@@ -29,14 +29,15 @@
       <body>
       	<div id="map"></div><div id="pane"><div id="progressBar" class="round-colored"><div style="width: 96%;">96% </div></div>czarny - brak danych na przejeździe czy przejezdny dla rowerów (jest highway=crossing bez bicycle=yes lub bicycle=no na trasie rowerowej)<br><br>czerwony - prawdopodobnie brak highway=crossing<br><br>niebieski - nieoczekiwane bicycle=no bez highway=crossing</div>
 
-      	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+      	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.js"></script>
       	<script>
       		var map = L.map('map').setView([50.06, 19.995], 12);
       		mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
       		L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
+        attribution: 'data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, basemap made by <a href="https://github.com/gravitystorm/openstreetmap-carto/">openstreetmap-carto project</a>',
+        subdomains: 'abc',
+        maxZoom: 19
+    }).addTo(map);
       
 L.circleMarker([50.0644941, 19.9424687], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
@@ -97,6 +98,8 @@ L.circleMarker([50.0837636, 19.9285695], {	color: 'black',	opacity: 1,
 L.circleMarker([50.0837738, 19.92921], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0214973, 19.9326803], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0858597, 19.9713822], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0898354, 19.9798454], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");

@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>translation missing: pl.cycling_infrastructure_shared_use_obligatory_title</title>
+	<title>Asfaltowe chodniki z których muszą* korzystać rowerzyści</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" />
 <link rel="stylesheet" type="text/css" href="./main.css" /><style>
         body {
             padding: 0;
@@ -27,14 +27,14 @@
   }    </style>
       </head>
       <body>
-      	<div id="map"></div><div id="pane">28 km - translation missing: pl.cycling_infrastructure_shared_use_obligatory_title<br><br>translation missing: pl.cycling_infrastructure_shared_use_obligatory</div>
+      	<div id="map"></div><div id="pane">28 km - Asfaltowe chodniki z których muszą* korzystać rowerzyści<br><br>Niestety, w wielu przypadkach budowane są nie wydzielone drogi dla rowerów a asfaltowe chodniki z których rowerzyści muszą* korzystać. Takie twory nazywane są ciągami pieszo-rowerowymi. W niektórych przypadkach, zwłaszcza przy dużych drogach lub przy minimalnym ruchu pieszym ogólny wpływ jest pozytywny. Jednak dla części rowerzystów którzy nie boją się jeździć drogami stanowią często spore utrudnienie - czasame zamiast jazdy drogą rowerzyści są zmuszeni do lawirowania pomiędzy pieszymi.<br><br>(*) Zgodnie z artykułem 33 Kodeksu Drogowego rowerzysta ma obowiązek korzystać z drogi dla rowerów jeżeli jest ona wyznaczona dla kierunku w którym się porusza. W wielu przypadkach nie jest jasne jak należy ten przepis stosować. Np. czy jadąc tak iż ma się drogę dla rowerów po lewej stronie - czy jest obowiązek korzystania z niej? Co jeśli w danym momencie po prawej stronie drogi jest droga dla rowerów ale uniemożliwia jazdy tam gdzie chce jechać rowerzysta? Co jeśli jest droga dla rowerów ale za chwile się skończy, bez możliwości zjechania na drogę?<br></div>
 
-      	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+      	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.js"></script>
       	<script>
       		var map = L.map('map').setView([50.06, 19.995], 12);
       		mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
       		L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+        attribution: 'data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, basemap: &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
         subdomains: 'abcd',
         maxZoom: 19
     }).addTo(map);
