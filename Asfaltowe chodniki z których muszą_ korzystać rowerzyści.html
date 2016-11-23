@@ -27,13 +27,13 @@
   }    </style>
       </head>
       <body>
-      	<div id="map"></div><div id="pane">28 km - Asfaltowe chodniki z których muszą* korzystać rowerzyści<br><br>Niestety, w wielu przypadkach budowane są nie wydzielone drogi dla rowerów a asfaltowe chodniki z których rowerzyści muszą* korzystać. Takie twory nazywane są ciągami pieszo-rowerowymi. W niektórych przypadkach, zwłaszcza przy dużych drogach lub przy minimalnym ruchu pieszym ogólny wpływ jest pozytywny. Jednak dla części rowerzystów którzy nie boją się jeździć drogami stanowią często spore utrudnienie - czasame zamiast jazdy drogą rowerzyści są zmuszeni do lawirowania pomiędzy pieszymi.<br><br>(*) Zgodnie z artykułem 33 Kodeksu Drogowego rowerzysta ma obowiązek korzystać z drogi dla rowerów jeżeli jest ona wyznaczona dla kierunku w którym się porusza. W wielu przypadkach nie jest jasne jak należy ten przepis stosować. Np. czy jadąc tak iż ma się drogę dla rowerów po lewej stronie - czy jest obowiązek korzystania z niej? Co jeśli w danym momencie po prawej stronie drogi jest droga dla rowerów ale uniemożliwia jazdy tam gdzie chce jechać rowerzysta? Co jeśli jest droga dla rowerów ale za chwile się skończy, bez możliwości zjechania na drogę?<br></div>
+      	<div id="map"></div><div id="pane">29 km - Asfaltowe chodniki z których muszą* korzystać rowerzyści<br><br>Niestety, w wielu przypadkach budowane są nie wydzielone drogi dla rowerów a asfaltowe chodniki z których rowerzyści muszą* korzystać. Takie twory nazywane są ciągami pieszo-rowerowymi. W niektórych przypadkach, zwłaszcza przy dużych drogach lub przy minimalnym ruchu pieszym ogólny wpływ jest pozytywny. Jednak dla części rowerzystów którzy nie boją się jeździć drogami stanowią często spore utrudnienie - czasame zamiast jazdy drogą rowerzyści są zmuszeni do lawirowania pomiędzy pieszymi.<br><br>(*) Zgodnie z artykułem 33 Kodeksu Drogowego rowerzysta ma obowiązek korzystać z drogi dla rowerów jeżeli jest ona wyznaczona dla kierunku w którym się porusza. W wielu przypadkach nie jest jasne jak należy ten przepis stosować. Np. czy jadąc tak iż ma się drogę dla rowerów po lewej stronie - czy jest obowiązek korzystania z niej? Co jeśli w danym momencie po prawej stronie drogi jest droga dla rowerów ale uniemożliwia jazdy tam gdzie chce jechać rowerzysta? Co jeśli jest droga dla rowerów ale za chwile się skończy, bez możliwości zjechania na drogę?<br></div>
 
       	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.js"></script>
       	<script>
       		var map = L.map('map').setView([50.06, 19.995], 12);
       		mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-      		L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+      		L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
         attribution: 'data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, basemap: &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
         subdomains: 'abcd',
         maxZoom: 19
@@ -852,6 +852,62 @@ L.polyline([[50.05427, 19.9330079], [50.0541114, 19.9329545]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0411746, 19.9243776], [50.0412684, 19.924317]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0306008, 19.9288202], [50.0305735, 19.9288153]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0305735, 19.9288153], [50.0305451, 19.9288161]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0305451, 19.9288161], [50.0304954, 19.9288158]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0304954, 19.9288158], [50.0304665, 19.9288175]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0304665, 19.9288175], [50.0304108, 19.9288185]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0304108, 19.9288185], [50.0303528, 19.9288186]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0303528, 19.9288186], [50.0303082, 19.9288184]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0303082, 19.9288184], [50.0302471, 19.9288111]],
     {
               color: 'orange',
               weight: 1,
@@ -2055,6 +2111,13 @@ L.polyline([[50.05427, 19.9330079], [50.0541114, 19.9329545]],
               opacity: 1,
               lineJoin: 'round'
           }
+          ).addTo(map);L.polyline([[50.0302471, 19.9288111], [50.0302477, 19.9288865]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
           ).addTo(map);L.polyline([[50.0822748, 20.0446715], [50.0825803, 20.0439712]],
     {
               color: 'orange',
@@ -2336,6 +2399,48 @@ L.polyline([[50.05427, 19.9330079], [50.0541114, 19.9329545]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0443423, 19.9395432], [50.0443354, 19.939643]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0298199, 19.9341488], [50.0296461, 19.934663]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0296461, 19.934663], [50.0296249, 19.9347281]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0296249, 19.9347281], [50.0296037, 19.934793]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0296037, 19.934793], [50.0293701, 19.9354241]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0293701, 19.9354241], [50.0292192, 19.9356292]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0292192, 19.9356292], [50.029186, 19.935673]],
     {
               color: 'orange',
               weight: 1,
@@ -4785,6 +4890,83 @@ L.polyline([[50.05427, 19.9330079], [50.0541114, 19.9329545]],
               opacity: 1,
               lineJoin: 'round'
           }
+          ).addTo(map);L.polyline([[50.0302477, 19.9288865], [50.0302461, 19.9289406]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0302461, 19.9289406], [50.0302447, 19.9289975]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0302447, 19.9289975], [50.030247, 19.9295171]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.030247, 19.9295171], [50.0302512, 19.9305089]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0302512, 19.9305089], [50.0302556, 19.9314764]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0302556, 19.9314764], [50.0302695, 19.9323389]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0302695, 19.9323389], [50.0302699, 19.9323665]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0302699, 19.9323665], [50.0302358, 19.9327514]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0302358, 19.9327514], [50.0301719, 19.933053]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0301719, 19.933053], [50.0300387, 19.9335357]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0300387, 19.9335357], [50.0298199, 19.9341488]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
           ).addTo(map);L.polyline([[50.0443354, 19.939643], [50.0442971, 19.9396365]],
     {
               color: 'orange',
@@ -5549,6 +5731,27 @@ L.polyline([[50.05427, 19.9330079], [50.0541114, 19.9329545]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.052865, 19.9163327], [50.0529, 19.9162022]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0757334, 20.0211288], [50.0756249, 20.0209265]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0756249, 20.0209265], [50.0752889, 20.0203019]],
+    {
+              color: 'orange',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0752889, 20.0203019], [50.0747979, 20.0194006]],
     {
               color: 'orange',
               weight: 1,

@@ -27,13 +27,13 @@
   }    </style>
       </head>
       <body>
-      	<div id="map"></div><div id="pane">85 km - Infrastruktura rowerowa spełniająca minimalne wymagania.<br><br>Poprzeczka jest tu ustawiona bardzo nisko - liczone są nie tylko pasy rowerowe oraz dobrze wykonane dorgi dla rowerów. Są tu też zaliczone wszystkie przypadki gdzie droga dla rowerów ma nawierzchnię asfaltową.<br>Ze względu na dopiero raczkującą infrastrukture rowerową uwzględnioną również nawierzchnię asfaltową która jest na tyle zniszczona iż wymaga już remontu.<br>Kotrapasy nie są wliczane do długości pasów rowerowych.</div>
+      	<div id="map"></div><div id="pane">87 km - Infrastruktura rowerowa spełniająca minimalne wymagania.<br><br>Poprzeczka jest tu ustawiona bardzo nisko - liczone są nie tylko pasy rowerowe oraz dobrze wykonane dorgi dla rowerów. Są tu też zaliczone wszystkie przypadki gdzie droga dla rowerów ma nawierzchnię asfaltową.<br>Ze względu na dopiero raczkującą infrastrukture rowerową uwzględnioną również nawierzchnię asfaltową która jest na tyle zniszczona iż wymaga już remontu.<br>Kotrapasy nie są wliczane do długości pasów rowerowych.</div>
 
       	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.js"></script>
       	<script>
       		var map = L.map('map').setView([50.06, 19.995], 12);
       		mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-      		L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+      		L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
         attribution: 'data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, basemap: &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
         subdomains: 'abcd',
         maxZoom: 19
@@ -3784,7 +3784,21 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0836545, 20.0175176], [50.0834506, 20.0172465]],
+          ).addTo(map);L.polyline([[50.0836545, 20.0175176], [50.0835719, 20.0174078]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0835719, 20.0174078], [50.0834796, 20.0172851]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0834796, 20.0172851], [50.0834506, 20.0172465]],
     {
               color: 'green',
               weight: 1,
@@ -4281,6 +4295,83 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
+          ).addTo(map);L.polyline([[50.0745867, 20.041914], [50.0747456, 20.0406941]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0747456, 20.0406941], [50.0747598, 20.0405935]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0747598, 20.0405935], [50.0747711, 20.0405123]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0747711, 20.0405123], [50.0748755, 20.0397517]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0748755, 20.0397517], [50.075033, 20.0384758]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.075033, 20.0384758], [50.075054, 20.0382987]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0752036, 20.0373576], [50.0752002, 20.0373911]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0752002, 20.0373911], [50.0751477, 20.0377626]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0751477, 20.0377626], [50.0751374, 20.0378323]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0751374, 20.0378323], [50.0750814, 20.03809]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0750814, 20.03809], [50.075054, 20.0382987]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
           ).addTo(map);L.polyline([[50.0793132, 20.0263445], [50.0792985, 20.0264144]],
     {
               color: 'green',
@@ -4653,6 +4744,34 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0797785, 20.0281791], [50.0798305, 20.0281697]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0782072, 20.0296034], [50.078126, 20.0297101]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.078126, 20.0297101], [50.0771116, 20.0310419]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0771116, 20.0310419], [50.0769309, 20.0312714]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0769309, 20.0312714], [50.0768518, 20.0313718]],
     {
               color: 'green',
               weight: 1,
@@ -5660,7 +5779,7 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0808898, 19.9740307], [50.0809348, 19.9739649]],
+          ).addTo(map);L.polyline([[50.0808898, 19.9740307], [50.0809049, 19.9740071]],
     {
               color: 'green',
               weight: 1,
@@ -6102,6 +6221,48 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.076975, 19.9176462], [50.0769961, 19.9175106]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0757588, 20.0331841], [50.0755591, 20.0347424]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0755591, 20.0347424], [50.0754877, 20.0352574]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0754877, 20.0352574], [50.0753947, 20.0359333]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0753947, 20.0359333], [50.0753698, 20.0361138]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0753698, 20.0361138], [50.0752642, 20.036887]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0752642, 20.036887], [50.0752036, 20.0373576]],
     {
               color: 'green',
               weight: 1,
@@ -7585,14 +7746,14 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0863999, 20.0092638], [50.0860967, 20.0110628]],
+          ).addTo(map);L.polyline([[50.0863999, 20.0092638], [50.0860953, 20.0110794]],
     {
               color: 'green',
               weight: 1,
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0860967, 20.0110628], [50.0860589, 20.0112836]],
+          ).addTo(map);L.polyline([[50.0860953, 20.0110794], [50.0860589, 20.0112836]],
     {
               color: 'green',
               weight: 1,
@@ -7704,55 +7865,6 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0848714, 19.9715867], [50.0848228, 19.971548]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0848228, 19.971548], [50.0848025, 19.9714454]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0848025, 19.9714454], [50.0848136, 19.9712237]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0848136, 19.9712237], [50.0848142, 19.9710912]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0848142, 19.9710912], [50.0847931, 19.9705289]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0847931, 19.9705289], [50.0847999, 19.9704434]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0847999, 19.9704434], [50.0848126, 19.970281]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
           ).addTo(map);L.polyline([[50.0848126, 19.970281], [50.0849253, 19.970325]],
     {
               color: 'green',
@@ -7789,48 +7901,6 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0854049, 19.9707136], [50.0854881, 19.9708071]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0854881, 19.9708071], [50.085539, 19.9709881]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.085539, 19.9709881], [50.0855503, 19.9710282]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0855503, 19.9710282], [50.0855395, 19.9711657]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0855395, 19.9711657], [50.0855314, 19.971271]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0855314, 19.971271], [50.0855377, 19.9717024]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0855377, 19.9717024], [50.0855376, 19.9719433]],
     {
               color: 'green',
               weight: 1,
@@ -10217,28 +10287,7 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0876284, 20.0042699], [50.0878252, 20.0043466]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0878252, 20.0043466], [50.0879207, 20.0043641]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0879207, 20.0043641], [50.0879429, 20.0045127]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0879429, 20.0045127], [50.0879791, 20.0046399]],
+          ).addTo(map);L.polyline([[50.0876284, 20.0042699], [50.0876656, 20.0042844]],
     {
               color: 'green',
               weight: 1,
@@ -11323,6 +11372,13 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
+          ).addTo(map);L.polyline([[50.0809049, 19.9740071], [50.0809348, 19.9739649]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
           ).addTo(map);L.polyline([[50.0809348, 19.9739649], [50.080969, 19.9738859]],
     {
               color: 'green',
@@ -11338,55 +11394,6 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0810314, 19.9737997], [50.0811182, 19.9737106]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0902999, 19.9833329], [50.0902985, 19.9832808]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0902985, 19.9832808], [50.090296, 19.9832359]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.090296, 19.9832359], [50.0902448, 19.9831507]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0902448, 19.9831507], [50.0902442, 19.9830738]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0902442, 19.9830738], [50.090238, 19.9829358]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.090238, 19.9829358], [50.0902484, 19.9827109]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0902484, 19.9827109], [50.0902174, 19.9822567]],
     {
               color: 'green',
               weight: 1,
@@ -14809,119 +14816,14 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0827216, 19.9716945], [50.0828624, 19.9715708]],
+          ).addTo(map);L.polyline([[50.0827216, 19.9716945], [50.0827725, 19.9716498]],
     {
               color: 'green',
               weight: 1,
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0828624, 19.9715708], [50.0829038, 19.9715178]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0829038, 19.9715178], [50.0830252, 19.9713856]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0830252, 19.9713856], [50.083217, 19.9712046]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.083217, 19.9712046], [50.0833624, 19.9710447]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0833624, 19.9710447], [50.0834874, 19.9709578]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0834874, 19.9709578], [50.0836363, 19.9708697]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0836363, 19.9708697], [50.0837693, 19.9708244]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0837693, 19.9708244], [50.0838528, 19.9708267]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0838528, 19.9708267], [50.0838839, 19.9708276]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0838839, 19.9708276], [50.084043, 19.9708386]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.084043, 19.9708386], [50.0842557, 19.970918]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0842557, 19.970918], [50.0843957, 19.9709917]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0843957, 19.9709917], [50.0845266, 19.9710942]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0845266, 19.9710942], [50.084699, 19.9712982]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.084699, 19.9712982], [50.0847622, 19.9714055]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0847622, 19.9714055], [50.0848025, 19.9714454]],
+          ).addTo(map);L.polyline([[50.0827725, 19.9716498], [50.0828624, 19.9715708]],
     {
               color: 'green',
               weight: 1,
@@ -16454,6 +16356,41 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
+          ).addTo(map);L.polyline([[50.0855376, 19.9719433], [50.0855377, 19.9717024]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0855377, 19.9717024], [50.0855314, 19.971271]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0855314, 19.971271], [50.0855395, 19.9711657]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0855395, 19.9711657], [50.0855503, 19.9710282]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0855503, 19.9710282], [50.085539, 19.9709881]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
           ).addTo(map);L.polyline([[50.0898107, 19.9789302], [50.0897979, 19.9789094]],
     {
               color: 'green',
@@ -16524,13 +16461,6 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0892393, 19.974451], [50.0892854, 19.9744729]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
           ).addTo(map);L.polyline([[50.0889444, 19.9746086], [50.0890041, 19.9745476]],
     {
               color: 'green',
@@ -16553,6 +16483,13 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0892048, 19.9744509], [50.0892393, 19.974451]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0892393, 19.974451], [50.0892854, 19.9744729]],
     {
               color: 'green',
               weight: 1,
@@ -18106,7 +18043,14 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0858303, 20.0199212], [50.0857429, 20.0200549]],
+          ).addTo(map);L.polyline([[50.0858303, 20.0199212], [50.0857048, 20.0200148]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0857048, 20.0200148], [50.0857061, 20.0200717]],
     {
               color: 'green',
               weight: 1,
@@ -20920,35 +20864,7 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0871628, 20.0074543], [50.0871956, 20.0073227]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0871956, 20.0073227], [50.087457, 20.0064334]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.087457, 20.0064334], [50.0877147, 20.0055404]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0877147, 20.0055404], [50.0879636, 20.0046665]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0879636, 20.0046665], [50.0879791, 20.0046399]],
+          ).addTo(map);L.polyline([[50.0871628, 20.0074543], [50.0871761, 20.0074004]],
     {
               color: 'green',
               weight: 1,
@@ -21859,6 +21775,363 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.092403, 19.8937338], [50.0923835, 19.8937208]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0910385, 19.9879186], [50.0909814, 19.9879519]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0909814, 19.9879519], [50.090927, 19.9879644]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.090927, 19.9879644], [50.0908767, 19.9879756]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0908767, 19.9879756], [50.0908164, 19.987989]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0908164, 19.987989], [50.09041, 19.9880856]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.09041, 19.9880856], [50.0903496, 19.9881111]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0903496, 19.9881111], [50.0899455, 19.9882625]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0899455, 19.9882625], [50.0898937, 19.9882819]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0898937, 19.9882819], [50.089843, 19.9882985]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.089843, 19.9882985], [50.089785, 19.9883277]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.089785, 19.9883277], [50.089701, 19.9883472]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.089701, 19.9883472], [50.0896614, 19.9883564]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0896614, 19.9883564], [50.0895548, 19.988376]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0895548, 19.988376], [50.0894154, 19.9883846]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0894154, 19.9883846], [50.0893984, 19.9883866]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0893984, 19.9883866], [50.0891967, 19.9883848]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0891967, 19.9883848], [50.0891765, 19.9883792]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0891765, 19.9883792], [50.0891515, 19.9883645]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0891515, 19.9883645], [50.0891386, 19.9883367]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0891386, 19.9883367], [50.0891338, 19.9883145]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0891338, 19.9883145], [50.0891291, 19.9882646]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0891291, 19.9882646], [50.0891314, 19.9882276]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0891314, 19.9882276], [50.0891397, 19.988198]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0891397, 19.988198], [50.0891469, 19.988174]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0891469, 19.988174], [50.0892403, 19.9879518]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0892403, 19.9879518], [50.0892528, 19.9879219]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0892528, 19.9879219], [50.0892619, 19.9879003]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0892619, 19.9879003], [50.0893224, 19.9877471]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0893224, 19.9877471], [50.0893795, 19.9875763]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0893795, 19.9875763], [50.0893924, 19.9875231]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0893924, 19.9875231], [50.0894055, 19.9874714]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0894055, 19.9874714], [50.0894245, 19.9873918]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0894245, 19.9873918], [50.0894434, 19.9872975]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0894434, 19.9872975], [50.0895324, 19.9869592]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0895324, 19.9869592], [50.0896831, 19.9865025]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0896831, 19.9865025], [50.0897946, 19.986166]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0897946, 19.986166], [50.0898444, 19.9860162]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0898444, 19.9860162], [50.0898883, 19.985872]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0898883, 19.985872], [50.089931, 19.9857037]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.089931, 19.9857037], [50.0899761, 19.9854966]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0899761, 19.9854966], [50.0900912, 19.9849493]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0900912, 19.9849493], [50.0901161, 19.9848236]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0901161, 19.9848236], [50.0901517, 19.9846072]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0901517, 19.9846072], [50.0901742, 19.9844556]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0901742, 19.9844556], [50.0901932, 19.9842911]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0901932, 19.9842911], [50.0902145, 19.9840581]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0902145, 19.9840581], [50.0902264, 19.9837992]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0902264, 19.9837992], [50.0902371, 19.9835441]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0902371, 19.9835441], [50.0902691, 19.9834185]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0902691, 19.9834185], [50.0902713, 19.9833305]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0902713, 19.9833305], [50.0902712, 19.9832343]],
     {
               color: 'green',
               weight: 1,
@@ -24140,14 +24413,14 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.089343, 19.9749934], [50.0894475, 19.9759157]],
+          ).addTo(map);L.polyline([[50.089343, 19.9749934], [50.0894029, 19.975783]],
     {
               color: 'green',
               weight: 1,
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0894475, 19.9759157], [50.0894549, 19.9762646]],
+          ).addTo(map);L.polyline([[50.0894029, 19.975783], [50.089441, 19.9758585]],
     {
               color: 'green',
               weight: 1,
@@ -25148,21 +25421,7 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0898116, 19.9791674], [50.0898172, 19.9790624]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0898172, 19.9790624], [50.0898132, 19.9789836]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0898132, 19.9789836], [50.0898107, 19.9789302]],
+          ).addTo(map);L.polyline([[50.0898116, 19.9791674], [50.0898128, 19.9790829]],
     {
               color: 'green',
               weight: 1,
@@ -25506,6 +25765,20 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0738704, 20.0185486], [50.0738737, 20.0185578]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0741063, 20.0184556], [50.0740581, 20.018459]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0740581, 20.018459], [50.0739614, 20.018478]],
     {
               color: 'green',
               weight: 1,
@@ -25876,14 +26149,7 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.02642, 19.9775106], [50.0264331, 19.9774764]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0264331, 19.9774764], [50.0267617, 19.9771423]],
+          ).addTo(map);L.polyline([[50.02642, 19.9775106], [50.0267617, 19.9771423]],
     {
               color: 'green',
               weight: 1,
@@ -26275,69 +26541,6 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0733641, 20.0205031], [50.0734405, 20.0197819]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0734405, 20.0197819], [50.0734715, 20.0196308]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0734715, 20.0196308], [50.0735586, 20.0193403]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0735586, 20.0193403], [50.0736153, 20.0191072]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0736153, 20.0191072], [50.0736628, 20.0189046]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0736628, 20.0189046], [50.0736834, 20.0188194]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0736834, 20.0188194], [50.0737237, 20.0187391]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0737237, 20.0187391], [50.0738371, 20.0185863]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0738371, 20.0185863], [50.0738704, 20.0185486]],
-    {
-              color: 'green',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
           ).addTo(map);L.polyline([[50.0880448, 19.9099357], [50.0880631, 19.9099768]],
     {
               color: 'green',
@@ -26360,6 +26563,391 @@ L.polyline([[50.0848879, 19.9749427], [50.0849391, 19.9749424]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0839205, 19.9257861], [50.0839538, 19.9256713]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0876656, 20.0042844], [50.0877763, 20.0043275]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0877763, 20.0043275], [50.0878252, 20.0043466]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0878252, 20.0043466], [50.0879207, 20.0043641]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0879207, 20.0043641], [50.0879429, 20.0045127]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0879429, 20.0045127], [50.0879791, 20.0046399]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0872162, 20.0072465], [50.087457, 20.0064334]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.087457, 20.0064334], [50.0877147, 20.0055404]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0877147, 20.0055404], [50.0879636, 20.0046665]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0879636, 20.0046665], [50.0879791, 20.0046399]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0871761, 20.0074004], [50.0871956, 20.0073227]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0871956, 20.0073227], [50.0872162, 20.0072465]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0902712, 19.9832343], [50.0902448, 19.9831507]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0902448, 19.9831507], [50.0902442, 19.9830738]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0902442, 19.9830738], [50.090238, 19.9829358]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.090238, 19.9829358], [50.0902484, 19.9827109]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0902484, 19.9827109], [50.0902174, 19.9822567]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0898128, 19.9790829], [50.0898132, 19.9789836]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0898132, 19.9789836], [50.0898107, 19.9789302]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.089441, 19.9758585], [50.0894475, 19.9759157]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0894475, 19.9759157], [50.0894548, 19.9760255]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0894548, 19.9760255], [50.0894549, 19.9762646]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0854881, 19.9708071], [50.085539, 19.9709881]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0848051, 19.9713934], [50.0848136, 19.9712237]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0848136, 19.9712237], [50.0848142, 19.9710912]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0848142, 19.9710912], [50.0847931, 19.9705289]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0847931, 19.9705289], [50.0847999, 19.9704434]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0847999, 19.9704434], [50.0848126, 19.970281]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0848714, 19.9715867], [50.0848228, 19.971548]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0848228, 19.971548], [50.0848025, 19.9714454]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0848025, 19.9714454], [50.0848051, 19.9713934]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0828624, 19.9715708], [50.0829038, 19.9715178]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0829038, 19.9715178], [50.0829374, 19.9714855]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0829374, 19.9714855], [50.0830252, 19.9713856]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0830252, 19.9713856], [50.0830363, 19.9713752]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0830363, 19.9713752], [50.083217, 19.9712046]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.083217, 19.9712046], [50.0833624, 19.9710447]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0833624, 19.9710447], [50.0834874, 19.9709578]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0834874, 19.9709578], [50.0836363, 19.9708697]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0836363, 19.9708697], [50.0837693, 19.9708244]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0837693, 19.9708244], [50.0838528, 19.9708267]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0838528, 19.9708267], [50.0838839, 19.9708276]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0838839, 19.9708276], [50.084043, 19.9708386]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.084043, 19.9708386], [50.0842557, 19.970918]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0842557, 19.970918], [50.0843957, 19.9709917]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0843957, 19.9709917], [50.0845266, 19.9710942]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0845266, 19.9710942], [50.084699, 19.9712982]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.084699, 19.9712982], [50.0847622, 19.9714055]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0847622, 19.9714055], [50.0848025, 19.9714454]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0747979, 20.0194006], [50.0744957, 20.0188271]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0744957, 20.0188271], [50.074181, 20.0184522]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.074181, 20.0184522], [50.0741063, 20.0184556]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0767743, 20.0314522], [50.0766968, 20.0315274]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0766968, 20.0315274], [50.0759051, 20.0325745]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0759051, 20.0325745], [50.0758175, 20.0327041]],
+    {
+              color: 'green',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0758175, 20.0327041], [50.0757588, 20.0331841]],
     {
               color: 'green',
               weight: 1,

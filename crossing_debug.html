@@ -27,7 +27,7 @@
   }    </style>
       </head>
       <body>
-      	<div id="map"></div><div id="pane"><div id="progressBar" class="round-colored"><div style="width: 96%;">96% </div></div>czarny - brak danych na przejeździe czy przejezdny dla rowerów (jest highway=crossing bez bicycle=yes lub bicycle=no na trasie rowerowej)<br><br>czerwony - prawdopodobnie brak highway=crossing<br><br>niebieski - nieoczekiwane bicycle=no bez highway=crossing</div>
+      	<div id="map"></div><div id="pane"><div id="progressBar" class="round-colored"><div style="width: 95%;">95% </div></div>czarny - brak danych na przejeździe czy przejezdny dla rowerów (jest highway=crossing bez bicycle=yes lub bicycle=no na trasie rowerowej)<br><br>czerwony - prawdopodobnie brak highway=crossing<br><br>niebieski - nieoczekiwane bicycle=no bez highway=crossing</div>
 
       	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.js"></script>
       	<script>
@@ -69,6 +69,8 @@ L.circleMarker([50.0638613, 19.988596], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0357634, 19.9422375], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0757334, 20.0211288], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0885208, 20.0210476], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0725727, 19.9813197], {	color: 'black',	opacity: 1,
@@ -78,6 +80,8 @@ L.circleMarker([50.0853249, 20.038016], {	color: 'black',	opacity: 1,
 L.circleMarker([50.0853601, 20.0382743], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0852095, 20.0384479], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0768518, 20.0313718], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0257099, 19.9782397], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
@@ -99,8 +103,6 @@ L.circleMarker([50.0837738, 19.92921], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0214973, 19.9326803], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
-L.circleMarker([50.0858597, 19.9713822], {	color: 'black',	opacity: 1,
-}).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0898354, 19.9798454], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0724362, 19.9810926], {	color: 'black',	opacity: 1,
@@ -108,6 +110,10 @@ L.circleMarker([50.0724362, 19.9810926], {	color: 'black',	opacity: 1,
 L.circleMarker([50.0401484, 19.9825465], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0684215, 19.9233401], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0851238, 19.9539482], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0851795, 19.9537698], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 
 </script>

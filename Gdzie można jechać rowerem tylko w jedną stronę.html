@@ -33,7 +33,7 @@
       	<script>
       		var map = L.map('map').setView([50.06, 19.995], 12);
       		mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-      		L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+      		L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
         attribution: 'data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, basemap: &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
         subdomains: 'abcd',
         maxZoom: 19
@@ -4149,6 +4149,13 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0568105, 19.9063037], [50.0567661, 19.9063813]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0287027, 19.9587579], [50.0286091, 19.958712]],
     {
               color: 'red',
               weight: 1,
@@ -9237,125 +9244,6 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0381822, 19.9204897], [50.0383318, 19.9204176]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0383318, 19.9204176], [50.0388048, 19.9200263]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0388048, 19.9200263], [50.0388529, 19.9199995]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0388529, 19.9199995], [50.0389217, 19.9200202]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0389217, 19.9200202], [50.0390838, 19.9201278]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0390838, 19.9201278], [50.0392983, 19.9201282]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0392983, 19.9201282], [50.040049, 19.9201186]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.040049, 19.9201186], [50.0401553, 19.9201422]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0401553, 19.9201422], [50.040249, 19.9201903]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.040249, 19.9201903], [50.0403397, 19.9202575]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0403397, 19.9202575], [50.0405198, 19.9204325]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0405198, 19.9204325], [50.0405416, 19.9204434]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0405416, 19.9204434], [50.040687, 19.9205094]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.040687, 19.9205094], [50.0410082, 19.9205364]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0410082, 19.9205364], [50.0411628, 19.920571]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0411628, 19.920571], [50.0417182, 19.920857]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0417182, 19.920857], [50.0418474, 19.9209303]],
-    {
-              color: 'red',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
           ).addTo(map);L.polyline([[50.0578187, 19.9457052], [50.0582793, 19.945087]],
     {
               color: 'red',
@@ -10504,7 +10392,14 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0302249, 19.9324068], [50.0302072, 19.932337]],
+          ).addTo(map);L.polyline([[50.0302249, 19.9324068], [50.0302112, 19.9323528]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0302112, 19.9323528], [50.0302072, 19.932337]],
     {
               color: 'red',
               weight: 1,
@@ -11449,14 +11344,14 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0454513, 19.9214835], [50.0455723, 19.9213931]],
+          ).addTo(map);L.polyline([[50.0454513, 19.9214835], [50.0455586, 19.9214067]],
     {
               color: 'red',
               weight: 1,
               opacity: 1,
               lineJoin: 'round'
           }
-          ).addTo(map);L.polyline([[50.0455723, 19.9213931], [50.0456886, 19.9212838]],
+          ).addTo(map);L.polyline([[50.0455586, 19.9214067], [50.0456886, 19.9212838]],
     {
               color: 'red',
               weight: 1,
@@ -12367,6 +12262,34 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0594626, 19.9424742], [50.0595852, 19.9421295]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0848452, 19.8908756], [50.0848288, 19.8908007]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0848288, 19.8908007], [50.0848144, 19.8907329]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0848144, 19.8907329], [50.0848094, 19.8906627]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0848094, 19.8906627], [50.0848162, 19.8905864]],
     {
               color: 'red',
               weight: 1,
@@ -16504,6 +16427,27 @@ L.polyline([[50.0019893, 19.8993974], [50.0015718, 19.8989652]],
               lineJoin: 'round'
           }
           ).addTo(map);L.polyline([[50.0134684, 19.9176861], [50.0139509, 19.9195398]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0848162, 19.8905864], [50.0847932, 19.8906623]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0847932, 19.8906623], [50.0847532, 19.8907936]],
+    {
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              lineJoin: 'round'
+          }
+          ).addTo(map);L.polyline([[50.0847532, 19.8907936], [50.0847298, 19.8908775]],
     {
               color: 'red',
               weight: 1,
