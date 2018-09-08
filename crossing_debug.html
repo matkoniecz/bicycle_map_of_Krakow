@@ -2,10 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Nieprzejezdne przejazdy</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" />
+  <title>Nieprzejezdne przejazdy</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=/>
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+   integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+   crossorigin=></script>
 <link rel="stylesheet" type="text/css" href="./main.css" /><style>
         body {
             padding: 0;
@@ -27,25 +33,37 @@
   }    </style>
       </head>
       <body>
-      	<div id="map"></div><div id="pane"><div id="progressBar" class="round-colored"><div style="width: 95%;">95% </div></div>czarny - brak danych na przejeździe czy przejezdny dla rowerów (jest highway=crossing bez bicycle=yes lub bicycle=no na trasie rowerowej)<br><br>czerwony - prawdopodobnie brak highway=crossing<br><br>niebieski - nieoczekiwane bicycle=no bez highway=crossing</div>
+        <div id="map"></div><div id="pane"><div class="round-colored"><div style="width: 85%;">85% </div></div>czarny - brak danych na przejeździe czy przejezdny dla rowerów (jest highway=crossing bez bicycle=yes lub bicycle=no na trasie rowerowej)<br><br>czerwony - prawdopodobnie brak highway=crossing<br><br>niebieski - nieoczekiwane bicycle=no bez highway=crossing</div>
 
-      	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.js"></script>
-      	<script>
-      		var map = L.map('map').setView([50.06, 19.995], 12);
-      		mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-      		L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        <script>
+          var map = L.map('map').setView([50.06, 19.995], 12);
+          mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+          L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: 'data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, basemap made by <a href="https://github.com/gravitystorm/openstreetmap-carto/">openstreetmap-carto project</a>',
         subdomains: 'abc',
         maxZoom: 19
     }).addTo(map);
-      
 L.circleMarker([50.0644941, 19.9424687], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0908338, 20.0091495], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.075498, 20.0130747], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0760051, 20.0134067], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0903098, 20.0211479], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0724877, 19.9811822], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0421952, 19.7970248], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0421967, 19.7974225], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0870399, 19.9326546], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0657774, 19.9390079], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0655295, 19.9388433], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0782072, 20.0296034], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
@@ -53,47 +71,107 @@ L.circleMarker([50.0568987, 19.9072158], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0599067, 19.9207635], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
-L.circleMarker([50.0653725, 19.9970497], {	color: 'black',	opacity: 1,
+L.circleMarker([50.0759644, 20.013587], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0154926, 19.9944161], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0498182, 20.0498371], {	color: 'black',	opacity: 1,
-}).setRadius(3).addTo(map).bindPopup(".");
-L.circleMarker([50.0166331, 20.0076413], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0691594, 20.0128388], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0693091, 20.0132942], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
-L.circleMarker([50.065344, 19.9969047], {	color: 'black',	opacity: 1,
-}).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0638613, 19.988596], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0357634, 19.9422375], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.075601, 20.013733], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0757334, 20.0211288], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0754567, 20.0132763], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0757263, 20.0137741], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.066682, 20.0037255], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.067152, 20.0036961], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0885208, 20.0210476], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0754978, 20.0140341], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0793985, 19.9388351], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0725727, 19.9813197], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0857818, 19.9798699], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0859369, 19.979827], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0873555, 19.9916352], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0866587, 19.9845873], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0853249, 20.038016], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
-L.circleMarker([50.0853601, 20.0382743], {	color: 'black',	opacity: 1,
-}).setRadius(3).addTo(map).bindPopup(".");
-L.circleMarker([50.0852095, 20.0384479], {	color: 'black',	opacity: 1,
-}).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0768518, 20.0313718], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0446091, 19.9709498], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0257099, 19.9782397], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0683485, 20.0525544], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0708066, 20.0395191], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0674397, 19.9029763], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0657966, 19.9028031], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.066564, 19.9027768], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.04905, 19.9820664], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0491457, 19.9814249], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0491502, 19.9819334], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0492065, 19.9815576], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0513651, 19.9862115], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.062406, 19.9022408], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0908659, 19.9206311], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0910232, 19.9216893], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0024031, 19.9132836], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0229274, 19.9812108], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0809348, 19.9739649], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0521696, 19.9542043], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0523211, 19.9541112], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0810375, 19.9737931], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0532396, 20.049769], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0568642, 19.9341039], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0674503, 19.9890511], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0673556, 19.9890612], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0862885, 19.9551843], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0892996, 20.0033266], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0896971, 20.0038912], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0915038, 19.9487859], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
@@ -103,17 +181,147 @@ L.circleMarker([50.0837738, 19.92921], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0214973, 19.9326803], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
-L.circleMarker([50.0898354, 19.9798454], {	color: 'black',	opacity: 1,
+L.circleMarker([50.0907975, 19.9189371], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0308206, 19.9120891], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0308003, 19.9119897], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0888687, 19.9744078], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0724362, 19.9810926], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0660995, 19.9892084], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0401484, 19.9825465], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0550147, 19.9276783], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0684215, 19.9233401], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0045867, 19.9616182], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0426312, 19.7974574], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0426635, 19.7973689], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0426439, 19.7969711], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0170957, 19.9304741], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0851238, 19.9539482], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 L.circleMarker([50.0851795, 19.9537698], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0222063, 19.8941125], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0835392, 19.9376952], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0829075, 19.9715251], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.089234, 19.9744842], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0894468, 19.9759391], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0897988, 19.9789913], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0902911, 19.9833308], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0893287, 19.9738958], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0892835, 19.9736965], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0854145, 19.9718624], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.08482, 19.9704554], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0849266, 19.970362], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0854068, 19.9707577], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.085514, 19.9711369], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0855143, 19.971698], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0855632, 19.9720242], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.084942, 19.9716102], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0848377, 19.9712534], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.084757, 19.9702274], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.085122, 19.9750107], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0780111, 19.9770598], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0783417, 19.9774022], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0782768, 19.977494], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0754374, 19.9798466], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0754317, 19.9798499], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0753738, 19.9798787], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0727726, 19.9812239], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0727123, 19.981294], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.064503, 19.9897543], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0641836, 19.9899629], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.064606, 19.9894102], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0645719, 19.9892067], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.064312, 19.9879726], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0642876, 19.9878528], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0642662, 19.987751], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0657742, 19.9967441], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0657944, 19.9968802], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.067419, 20.0040273], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0675121, 20.0045814], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0674267, 20.004976], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0670043, 20.005075], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0671624, 20.003733], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0666897, 20.0037632], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0716144, 19.9830986], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0715216, 19.9829719], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.071333, 19.9829734], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0711823, 19.9832585], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0712171, 19.9835246], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0713051, 19.9836316], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0714744, 19.9836555], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0716288, 19.9833619], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.067558, 20.0642086], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0864357, 19.9865321], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0702456, 20.0419627], {	color: 'black',	opacity: 1,
+}).setRadius(3).addTo(map).bindPopup(".");
+L.circleMarker([50.0128538, 19.9055148], {	color: 'black',	opacity: 1,
 }).setRadius(3).addTo(map).bindPopup(".");
 
 </script>

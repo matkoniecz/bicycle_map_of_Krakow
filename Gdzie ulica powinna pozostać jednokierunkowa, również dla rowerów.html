@@ -2,10 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Gdzie ulica powinna pozostać jednokierunkowa, również dla rowerów</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" />
+  <title>Gdzie ulica powinna pozostać jednokierunkowa, również dla rowerów</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=/>
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+   integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+   crossorigin=></script>
 <link rel="stylesheet" type="text/css" href="./main.css" /><style>
         body {
             padding: 0;
@@ -27,61 +33,17 @@
   }    </style>
       </head>
       <body>
-      	<div id="map"></div><div id="pane">0.1 km - Gdzie ulica powinna pozostać jednokierunkowa, również dla rowerów<br><br>Kontraruch jest rozwiązaniem bezpiecznym, jednak są pewne miejsca które są wyjątkami. Przy skrajnie ograniczonej widoczności, połączonej z małą szerokością drogi niemożliwe jest bezpieczne wprowadzenie kontraruchu. Takie miejsca są dość rzadkie. W szczególnej sytuacji uzasadnione może być wprowadzenie rozwiązań typu ruch wachadłowy, jednak wymaga to analizy sytuacji by uniknąć zbędnego wydawania pieniędzy.<br></div>
+        <div id="map"></div><div id="pane">0.1 km - Gdzie ulica powinna pozostać jednokierunkowa, również dla rowerów<br><br>Kontraruch jest rozwiązaniem bezpiecznym, jednak są pewne miejsca które są wyjątkami. Przy skrajnie ograniczonej widoczności, połączonej z małą szerokością drogi niemożliwe jest bezpieczne wprowadzenie kontraruchu. Takie miejsca są dość rzadkie. W szczególnej sytuacji uzasadnione może być wprowadzenie rozwiązań typu ruch wachadłowy, jednak wymaga to analizy sytuacji by uniknąć zbędnego wydawania pieniędzy.<br></div>
 
-      	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.js"></script>
-      	<script>
-      		var map = L.map('map').setView([50.06, 19.995], 12);
-      		mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-      		L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+        <script>
+          var map = L.map('map').setView([50.06, 19.995], 12);
+          mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+          L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
         attribution: 'data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, basemap: &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
         subdomains: 'abcd',
         maxZoom: 19
     }).addTo(map);
-      
-L.polyline([[50.0508202, 19.8739121], [50.0511434, 19.8733758]],
-    {
-              color: 'purple',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0511434, 19.8733758], [50.051187, 19.8732097]],
-    {
-              color: 'purple',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.051187, 19.8732097], [50.0512078, 19.8730763]],
-    {
-              color: 'purple',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0512078, 19.8730763], [50.0512188, 19.8729507]],
-    {
-              color: 'purple',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0512188, 19.8729507], [50.0512254, 19.8728124]],
-    {
-              color: 'purple',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);L.polyline([[50.0512254, 19.8728124], [50.0512485, 19.8726584]],
-    {
-              color: 'purple',
-              weight: 1,
-              opacity: 1,
-              lineJoin: 'round'
-          }
-          ).addTo(map);
+    L.polyline([[50.0508202, 19.8739121], [50.0511434, 19.8733758]], {color: 'purple', fill: 'black', weight: 1, opacity: 1, lineJoin: 'round'}).addTo(map);    L.polyline([[50.0511434, 19.8733758], [50.051187, 19.8732097]], {color: 'purple', fill: 'black', weight: 1, opacity: 1, lineJoin: 'round'}).addTo(map);    L.polyline([[50.051187, 19.8732097], [50.0512078, 19.8730763]], {color: 'purple', fill: 'black', weight: 1, opacity: 1, lineJoin: 'round'}).addTo(map);    L.polyline([[50.0512078, 19.8730763], [50.0512188, 19.8729507]], {color: 'purple', fill: 'black', weight: 1, opacity: 1, lineJoin: 'round'}).addTo(map);    L.polyline([[50.0512188, 19.8729507], [50.0512254, 19.8728124]], {color: 'purple', fill: 'black', weight: 1, opacity: 1, lineJoin: 'round'}).addTo(map);    L.polyline([[50.0512254, 19.8728124], [50.0512485, 19.8726584]], {color: 'purple', fill: 'black', weight: 1, opacity: 1, lineJoin: 'round'}).addTo(map);
 
 </script>
 </body>
